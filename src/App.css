@@ -1,0 +1,345 @@
+.auth {
+    min-height: 100vh;
+    background: #f0f0f0;
+    padding-top: 90px;
+}
+
+.auth_title {
+    margin-bottom: 30px;
+}
+
+.auth_title h2 {
+    color: #000;
+    font-size: 30px;
+}
+
+.auth {
+    min-height: 100vh;
+    background: #f0f0f0;
+    padding-block: 90px;
+}
+
+.auth_title {
+    margin-bottom: 50px;
+}
+
+.auth_title h2 {
+    color: #000;
+    font-size: 30px;
+}
+
+.auth .form_group {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.auth .form_group label {
+    display: block;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.auth .form_group input {
+    height: 46px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid rgb(0 0 0 / 59%);
+    width: 100%;
+    outline: none;
+    padding: 0px 15px;
+    font-size: 18px;
+}
+
+.auth .form_group input::placeholder {
+    font-size: 18px;
+}
+.buttonAction button {
+    height: 40px;
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+    min-width: 100%;
+    border-radius: 5px;
+    outline: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.auth_grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.auth_grid > div {
+    min-width: 48%;
+    max-width: 48%;
+}
+
+
+/*  */
+
+
+section.shopping_cart {
+    padding: 100px 30px;
+}
+
+.shopping_cart_title {
+    margin-bottom: 40px;
+}
+
+.shopping_carts_titles {
+    display: flex;
+}
+
+.shopping_carts_titles li:nth-child(1) {
+    min-width: 49%;
+    max-width: 49%;
+}
+
+.shopping_carts_titles ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 7px;
+    margin-bottom: 25px;
+}
+
+.shopping_carts_titles li {
+    min-width: 17%;
+    max-width: 17%;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+}
+
+
+
+.shopping_cart_item {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-bottom: 1px solid #ccc;
+    margin-bottom: 20px; */
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.shopping_cart_item .shopping_cart_item_product {
+    min-width: 49%;
+    max-width: 49%;
+    display: inline-flex;
+    align-items: center;
+}
+
+.shopping_cart_item > div {
+    width: 17%;
+}
+
+.shopping_cart_item_product .shopping_cart_item_product_img {
+    width: auto;
+    margin-inline-end: 25px;
+    max-width: 28%;
+    min-width: 90px;
+}
+
+.shopping_cart_item_product .shopping_cart_item_product_img img {
+    width: auto;
+    max-width: 100%;
+    min-width: inherit;
+}
+
+.shopping_cart_item_product_info {
+    max-width: 68%;
+}
+
+.shopping_cart_item_product_info h4 {
+    margin-bottom: 15px;
+}
+
+.shopping_cart_item_product_info p {
+    font-size: 15px;
+}
+
+.shopping_cart_item:last-child {
+    border: none;
+}
+
+.cart_Quantity {
+    width: 100%;
+    max-width: 180px;
+    /* margin: auto; */
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+    padding: 2px 5px;
+    font-weight: 700;
+    color: #777;
+}
+
+.cart_Quantity span.minus,.cart_Quantity span.plus {
+    width: 30px;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* font-size: 33px; */
+    cursor: pointer;
+}
+
+.shopping_cart_item .shopping_cart_close {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 5px;
+    inset-inline-end: 10px;
+    font-size: 21px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.footer_cart {
+    background: #F2F2F2;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: end;
+}
+
+.footer_cart .subtotal_cart {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer_cart .subtotal_cart span {
+    margin-inline-start: 100px;
+}
+
+
+.shopping_cart_item_total {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 900;
+    color: #666;
+}
+
+
+.shopping_cart_item_product .shopping_cart_item_product_img {
+    position: relative;
+}
+
+.shopping_cart_item_product .shopping_cart_item_product_img .shopping_cart_count {
+    position: absolute;
+    background: rgba(114,114,114,0.9);
+    color: #fff;
+    top: -7px;
+    inset-inline-end: -8px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.shopping_cart_item_product .shopping_cart_item_product_img img {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.shopping_cart_item_product_info ul li {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.shopping_carts {
+    max-width: 60%;
+    min-width: 60%;
+}
+
+.shopping_cart_grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shopping_cart_discount {
+    max-width: 38%;
+    min-width: 38%;
+}
+
+section.shopping_cart {
+    background: #fafafa;
+}
+
+/*   */
+
+.shopping_cart_discount {
+    padding-top: 40px;
+}
+
+.shopping_cart_discount form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ddd;
+}
+
+.form_offer {}
+
+.form_offer .form_group.offerF {
+    min-width: calc(100% - 120px);
+    max-width: calc(100% - 120px);
+}
+
+.form_offer .form_group.offerF input#dicCode {
+    width: 100%;
+    height: 40px;
+    padding: 0px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form_offer .buttonAction.offerSend {
+    width: 100px;
+}
+
+.form_offer .buttonAction.offerSend button {
+    height: 40px;
+    font-size: 14px;
+}
+
+
+.form_offer .buttonAction.offerSend button:disabled {
+    cursor: not-allowed;
+    background: #c8c8c8;
+    border: none;
+}
+
+.total_offer_dis .total_offer_dis_taxes {
+    margin-top: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total_offer_dis .total_offer_dis_taxes span.taxes {
+    color: #666;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.total_offer_dis .total_offer_dis_taxes span {
+    font-size: 25px;
+    font-weight: 700;
+}
