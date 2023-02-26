@@ -4,28 +4,36 @@ import CartItem from "../components/CartItem";
 import FooterCart from "../components/FooterCart";
 import Input from "../components/Input";
 
-const ShoppingCart = () => {
+const ShoppingCart = ({checkoutCart}) => {
   return (
-    <section className="shopping_cart">
+    <section className={`shopping_cart ${checkoutCart ? "checkoutCartSection" : ""}`}>
       <div className="container-fluid">
-        <div className="shopping_cart_title">
-          <h3>Shopping Cart</h3>
-        </div>
+        {
+          !checkoutCart && (
+            <div className="shopping_cart_title">
+            <h3>Shopping Cart</h3>
+          </div>
+          )
+        }
+
         <div className="shopping_cart_grid">
 
         <div className="shopping_carts">
-          <div className="shopping_carts_titles">
-            <ul>
-              <li>Products</li>
-              {/* <li>Price</li>
-              <li>Quantity</li>
-              <li>Total</li> */}
-            </ul>
-          </div>
+          {!checkoutCart && (
+                      <div className="shopping_carts_titles">
+                      <ul>
+                        <li>Products</li>
+                        {/* <li>Price</li>
+                        <li>Quantity</li>
+                        <li>Total</li> */}
+                      </ul>
+                    </div>
+          )}
+
           <div className="shopping_carts_items">
-            <CartItem />
-            <CartItem />
-            <CartItem />
+            <CartItem checkoutCart={checkoutCart ? checkoutCart : null} />
+            <CartItem checkoutCart={checkoutCart ? checkoutCart : null} />
+            <CartItem checkoutCart={checkoutCart ? checkoutCart : null} />
           </div>
         </div>
 

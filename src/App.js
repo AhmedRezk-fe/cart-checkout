@@ -1,15 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
 import Auth from './pages/Auth';
 import CheckOut from './pages/CheckOut';
 import ShoppingCart from './pages/Cart';
+import Popup_cart from './components/Popup_cart';
 
 function App() {
   return (
     <div className="App">
-      {/* <CheckOut /> */}
+      <CheckOut />
       <ShoppingCart />
       <Auth />
+      {/* <Popup_cart /> */}
     </div>
   );
 }
